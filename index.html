@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROX Schildersbedrijf - Fiyat Teklifi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>ROX Schildersbedrijf - Fiyat Teklifi</h1>
+            
+            <div class="section" id="customer-info">
+                <h2>Müşteri Bilgileri</h2>
+                <div class="info">
+                    <label>Ad Soyad:</label>
+                    <input type="text" id="customer-name" placeholder="Müşteri adı ve soyadı">
+                </div>
+                <div class="info">
+                    <label>Telefon:</label>
+                    <input type="text" id="customer-phone" placeholder="Telefon numarası">
+                </div>
+                <div class="info">
+                    <label>Adres:</label>
+                    <textarea id="customer-address" placeholder="Adres"></textarea>
+                </div>
+                <div class="info">
+                    <label>E-posta:</label>
+                    <input type="email" id="customer-email" placeholder="E-posta adresi">
+                </div>
+            </div>
+            
+            <div class="section" id="project-details">
+                <h2>Proje Detayları</h2>
+                <div class="info">
+                    <label>Proje Tanımı:</label>
+                    <textarea id="project-description" placeholder="Proje tanımı"></textarea>
+                </div>
+                <div class="info">
+                    <label>Başlangıç Tarihi:</label>
+                    <input type="date" id="start-date">
+                </div>
+                <div class="info">
+                    <label>Bitiş Tarihi:</label>
+                    <input type="date" id="end-date">
+                </div>
+            </div>
+            
+            <div class="section" id="quote">
+                <h2>Fiyat Teklifi</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hizmet</th>
+                            <th>Miktar</th>
+                            <th>Birim Fiyat</th>
+                            <th>Toplam</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Boya İşçiliği</td>
+                            <td><input type="number" placeholder="Miktar"></td>
+                            <td><input type="text" placeholder="Birim Fiyat"></td>
+                            <td><input type="text" placeholder="Toplam"></td>
+                        </tr>
+                        <tr>
+                            <td>Malzeme</td>
+                            <td><input type="number" placeholder="Miktar"></td>
+                            <td><input type="text" placeholder="Birim Fiyat"></td>
+                            <td><input type="text" placeholder="Toplam"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="3">Genel Toplam:</th>
+                            <th><input type="text" placeholder="Genel Toplam"></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            
+            <div class="section" id="terms">
+                <h2>Şartlar ve Koşullar</h2>
+                <p>1. Bu teklif 30 gün geçerlidir.</p>
+                <p>2. Ödeme şartları: %50 peşin, %50 iş tamamlandığında.</p>
+                <p>3. Tüm fiyatlara KDV dahildir.</p>
+            </div>
+            
+            <div class="section" id="signatures">
+                <div class="info">
+                    <label>Müşteri İmzası:</label>
+                    <input type="text" placeholder="Müşteri İmzası">
+                </div>
+                <div class="info">
+                    <label>Şirket Yetkilisi:</label>
+                    <input type="text" placeholder="Şirket Yetkilisi">
+                </div>
+                <div class="info">
+                    <label>Tarih:</label>
+                    <input type="date">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
